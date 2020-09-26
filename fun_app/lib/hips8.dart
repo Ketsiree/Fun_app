@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:funny_app/hips9.dart';
+
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 import 'hips9.dart';
 

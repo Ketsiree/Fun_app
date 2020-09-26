@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:funny_app/Profile.dart';
 import 'Profile.dart';
 
 class Home extends StatelessWidget{

@@ -10,10 +10,14 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   final User user = new User();
+  TextEditingController emailController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
+  @override
 
   @override
   Widget build(BuildContext context) {
     final TextField _txtEmail = new TextField(
+      controller: emailController,
       decoration: new InputDecoration(
         hintText: 'Email',
         contentPadding: new EdgeInsets.all(10.0),
@@ -29,6 +33,7 @@ class _LoginPageState extends State<LoginPage> {
     );
 
     final TextField _txtPassword = new TextField(
+      controller: passwordController,
       decoration: new InputDecoration(
         hintText: 'Password',
         contentPadding: new EdgeInsets.all(10.0),
@@ -90,7 +95,11 @@ class _LoginPageState extends State<LoginPage> {
                     color: Colors.blue,
                     onPressed: () {
                       // ActionLogin.f_print();
-                      ActionLogin.signIn();
+                      ActionLogin.signIn(
+                        context: context,
+                        email: emailController.text.trim(),
+                        pass: passwordController.text.trim(),
+                      );
                       // print('userNameString ==> ${user.userNameString}');
                       // print('emailString ==> ${user.emailString}');
                       // print('passwordString ==> ${user.passwordString}');

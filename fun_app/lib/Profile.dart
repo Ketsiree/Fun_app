@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:funny_app/arms1.dart';
+
+import 'arms1.dart';
+
 // import 'Home.dart';
 // import 'Arms.dart';
 

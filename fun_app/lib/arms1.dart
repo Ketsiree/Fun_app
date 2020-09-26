@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:funny_app/armss1.dart';
 import 'package:video_player/video_player.dart';
 import 'Chewie_list_item.dart';
 import 'armss1.dart';
