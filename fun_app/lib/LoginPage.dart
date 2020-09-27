@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'Action/ActionLogin.dart';
-import 'Home.dart';
 import 'user.dart';
 
 class LoginPage extends StatefulWidget {
@@ -13,7 +12,6 @@ class _LoginPageState extends State<LoginPage> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   @override
-
   @override
   Widget build(BuildContext context) {
     final TextField _txtEmail = new TextField(
@@ -100,11 +98,6 @@ class _LoginPageState extends State<LoginPage> {
                         email: emailController.text.trim(),
                         pass: passwordController.text.trim(),
                       );
-                      // print('userNameString ==> ${user.userNameString}');
-                      // print('emailString ==> ${user.emailString}');
-                      // print('passwordString ==> ${user.passwordString}');
-                      // Navigator.push(context,
-                      //     MaterialPageRoute(builder: (context) => Home()));
                     },
                   ),
                 ),
@@ -116,5 +109,3 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
-
-//าานดนา่อยนกเ่นยะ้พ้ั

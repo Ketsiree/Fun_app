@@ -2,15 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 import 'armss3.dart';
 
-class HomePage extends StatefulWidget {
+class ArmsTwo extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
+  _ArmsTwoState createState() => _ArmsTwoState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _ArmsTwoState extends State<ArmsTwo> {
   String videoURL = "https://www.youtube.com/watch?v=1E1Y_u0vVD4";
   YoutubePlayerController _controller;
-
 
   @override
   void initState() {
@@ -37,11 +36,13 @@ class _HomePageState extends State<HomePage> {
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 Text(""),
-                Text("การกายภาพท่าที่ 2", style: TextStyle(
-                    fontSize: 20, fontWeight: FontWeight.bold)),
-                Text("กางหุบแขน"
-                  ,
-                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),),
+                Text("การกายภาพท่าที่ 2",
+                    style:
+                        TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                Text(
+                  "กางหุบแขน",
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                ),
               ],
             ),
             height: 90,
@@ -51,12 +52,10 @@ class _HomePageState extends State<HomePage> {
             child: SingleChildScrollView(
               child: Column(
                 children: <Widget>[
-
                   YoutubePlayer(
                     controller: _controller,
                     showVideoProgressIndicator: true,
                   ),
-
                 ],
               ),
             ),
@@ -66,7 +65,9 @@ class _HomePageState extends State<HomePage> {
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 Text(""),
-                Text("ประเมินหลังจากการกายภาพ",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                Text("ประเมินหลังจากการกายภาพ",
+                    style:
+                        TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               ],
             ),
             height: 75,
@@ -78,10 +79,13 @@ class _HomePageState extends State<HomePage> {
                 FloatingActionButton(
                   heroTag: "btn1",
                   onPressed: () => print("FloatingActionButton"),
-                  child:  Icon(Icons.thumb_up),
+                  child: Icon(Icons.thumb_up),
                   backgroundColor: Colors.green,
                 ),
-                Text("    ดีมาก",style: TextStyle(fontWeight:FontWeight.bold, fontSize: 20),),
+                Text(
+                  "    ดีมาก",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                ),
               ],
             ),
           ),
@@ -94,7 +98,10 @@ class _HomePageState extends State<HomePage> {
                   child: Icon(Icons.thumbs_up_down),
                   backgroundColor: Colors.yellow,
                 ),
-                Text("    ปานกลาง",style: TextStyle(fontWeight:FontWeight.bold, fontSize: 20),),
+                Text(
+                  "    ปานกลาง",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                ),
               ],
             ),
           ),
@@ -107,7 +114,10 @@ class _HomePageState extends State<HomePage> {
                   child: new Icon(Icons.thumb_down),
                   backgroundColor: Colors.red,
                 ),
-                Text("    แย่",style: TextStyle(fontWeight:FontWeight.bold, fontSize: 20),),
+                Text(
+                  "    แย่",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                ),
                 Text(" "),
               ],
             ),
@@ -127,39 +137,12 @@ class _HomePageState extends State<HomePage> {
               child: Text("NEXT"),
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(
-                        builder: (context) => ArmsThree()));
+                    MaterialPageRoute(builder: (context) => ArmsThree()));
               },
             ),
           ),
-
         ],
       ),
     );
   }
 }
-
-
-
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: Text("Youtube Player"),
-//       ),
-//       body: Container(
-//         child: SingleChildScrollView(
-//           child: Column(
-//             children: <Widget>[
-//
-//               YoutubePlayer(
-//                 controller: _controller,
-//                 showVideoProgressIndicator: true,
-//               ),
-//
-//             ],
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }

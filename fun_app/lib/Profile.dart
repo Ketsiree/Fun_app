@@ -1,12 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import 'arms1.dart';
 
 // import 'Home.dart';
 // import 'Arms.dart';
 
-class profile extends StatelessWidget {
+class Profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,14 +35,16 @@ class profile extends StatelessWidget {
                   Text(""),
                   Text(""),
                   Text(""),
-                  Text("1.การทำกายภาพทั้ง 12 ท่า เป็นท่ากายภาพมาตรฐานที่สามารถทำได้ทุกเพศทุกวัย"),
+                  Text(
+                      "1.การทำกายภาพทั้ง 12 ท่า เป็นท่ากายภาพมาตรฐานที่สามารถทำได้ทุกเพศทุกวัย"),
                   Text(""),
-                  Text("2.เมื่อเริ่มทำการกายภาพให้กับคนไข้ติดเตียงหรือผู้สูงอายุให้ดูเป็นระยะๆ ว่าคนไข้มีอาการเหนื่อยหรือไม่ หากมีให้คนไข้พัก 15-30 วินาที"),
+                  Text(
+                      "2.เมื่อเริ่มทำการกายภาพให้กับคนไข้ติดเตียงหรือผู้สูงอายุให้ดูเป็นระยะๆ ว่าคนไข้มีอาการเหนื่อยหรือไม่ หากมีให้คนไข้พัก 15-30 วินาที"),
                   Text(""),
-                  Text("3.หากคนไข้หรือผู้สูงอายุมีแรงมากพอให้ทำการปฏิบัติด้วยตนเอง เพื่อเป็นการฝึกออกแรง หากไม่ไหว ห้ามฝืน แล้วให้ผู้ดูแลเข้าไปช่วยเหลือ"),
+                  Text(
+                      "3.หากคนไข้หรือผู้สูงอายุมีแรงมากพอให้ทำการปฏิบัติด้วยตนเอง เพื่อเป็นการฝึกออกแรง หากไม่ไหว ห้ามฝืน แล้วให้ผู้ดูแลเข้าไปช่วยเหลือ"),
                   Text(""),
-                  Text("",
-                      style: TextStyle(fontSize: 14)),
+                  Text("", style: TextStyle(fontSize: 14)),
                 ],
               ),
               height: 300,
@@ -55,17 +56,17 @@ class profile extends StatelessWidget {
                   Container(
                     color: Colors.yellowAccent,
                     child: Text("",
-                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 20)),
                   ),
                   Container(
                       child: RaisedButton(
-                        child: Text("NEXT"),
-                        onPressed: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => arms1()));
-                        },
-                      )
-                  ),
+                    child: Text("NEXT"),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => ArmsOne()));
+                    },
+                  )),
                 ],
               ),
             ),
